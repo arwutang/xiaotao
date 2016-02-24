@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.xiaotao.dp.creation.factory.pizza.abstractfactory</OriginalElement>
+  <nodes>
+    <node x="-7.67474048442898" y="344.5051903114187">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.Pizza</node>
+    <node x="353.5259515570934" y="8.925605536332199">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.PizzaHouse</node>
+    <node x="448.5259515570934" y="158.92560553633226">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.ShanghaiPizzaHouse</node>
+    <node x="236.52595155709338" y="158.92560553633226">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.BeijingPizzaHouse</node>
+    <node x="25.32525951557102" y="587.5051903114187">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CreamPizza</node>
+    <node x="767.6020761245675" y="529.4688581314879">com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.ShanghaiPizzaVendor</node>
+    <node x="583.6020761245675" y="529.4688581314879">com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.BeijingPizzaVendor</node>
+    <node x="675.6020761245675" y="403.4688581314879">com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.PizzaVendor</node>
+    <node x="268.325259515571" y="587.5051903114187">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CheesePizza</node>
+    <node x="-205.67474048442898" y="587.5051903114187">com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.BeefPizza</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.ShanghaiPizzaVendor" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.PizzaVendor">
+      <point x="0.0" y="-38.0" />
+      <point x="849.6020761245675" y="504.4688581314879" />
+      <point x="798.6020761245675" y="504.4688581314879" />
+      <point x="41.0" y="38.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.BeefPizza">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.Pizza" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.PizzaVendor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CreamPizza">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CheesePizza">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CheesePizza">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.BeijingPizzaVendor" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.PizzaVendor">
+      <point x="0.0" y="-38.0" />
+      <point x="665.6020761245675" y="504.4688581314879" />
+      <point x="716.6020761245675" y="504.4688581314879" />
+      <point x="-41.0" y="38.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CreamPizza" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.Pizza">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.PizzaHouse">
+      <point x="0.0" y="-26.5" />
+      <point x="332.5259515570934" y="133.92560553633226" />
+      <point x="396.0259515570934" y="133.92560553633226" />
+      <point x="-42.5" y="50.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.CheesePizza" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.Pizza">
+      <point x="0.0" y="-38.5" />
+      <point x="381.825259515571" y="562.5051903114187" />
+      <point x="233.15859284890433" y="562.5051903114187" />
+      <point x="96.33333333333331" y="96.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.PizzaHouse">
+      <point x="0.0" y="-26.5" />
+      <point x="544.5259515570933" y="133.92560553633226" />
+      <point x="481.0259515570934" y="133.92560553633226" />
+      <point x="42.5" y="50.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.ShanghaiPizzaVendor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizzahouse.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.vendor.BeijingPizzaVendor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.BeefPizza" target="com.xiaotao.dp.creation.factory.pizza.abstractfactory.pizza.Pizza">
+      <point x="0.0" y="-38.5" />
+      <point x="-100.17474048442898" y="562.5051903114187" />
+      <point x="40.491926182237705" y="562.5051903114187" />
+      <point x="-96.33333333333331" y="96.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8537666174298375" x="363.0" y="336.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

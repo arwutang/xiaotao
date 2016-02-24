@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.xiaotao.dp.creation.factory.pizza.factorymethod</OriginalElement>
+  <nodes>
+    <node x="304.5625" y="0.0">com.xiaotao.dp.creation.factory.pizza.factorymethod.Pizza</node>
+    <node x="396.66666666666663" y="160.5">com.xiaotao.dp.creation.factory.pizza.factorymethod.CheesePizza</node>
+    <node x="0.0" y="149.0">com.xiaotao.dp.creation.factory.pizza.factorymethod.PizzaHouse</node>
+    <node x="228.99999999999997" y="160.5">com.xiaotao.dp.creation.factory.pizza.factorymethod.BeefPizza</node>
+    <node x="298.5625" y="295.0">com.xiaotao.dp.creation.factory.pizza.factorymethod.ShanghaiPizzaHouse</node>
+    <node x="85.18749999999997" y="295.0">com.xiaotao.dp.creation.factory.pizza.factorymethod.BeijingPizzaHouse</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.BeefPizza">
+      <point x="0.0" y="-26.5" />
+      <point x="394.5625" y="245.0" />
+      <point x="331.0" y="245.0" />
+      <point x="34.0" y="26.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.CheesePizza">
+      <point x="64.0" y="-26.5" />
+      <point x="458.5625" y="275.0" />
+      <point x="498.66666666666663" y="275.0" />
+      <point x="34.0" y="26.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.ShanghaiPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.PizzaHouse">
+      <point x="-64.0" y="-26.5" />
+      <point x="330.5625" y="255.0" />
+      <point x="156.75" y="255.0" />
+      <point x="52.25" y="38.0" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.CheesePizza" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.Pizza">
+      <point x="0.0" y="-26.5" />
+      <point x="464.66666666666663" y="124.0" />
+      <point x="436.5625" y="124.0" />
+      <point x="44.0" y="49.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.CheesePizza">
+      <point x="64.00000000000003" y="-26.5" />
+      <point x="245.1875" y="275.0" />
+      <point x="430.66666666666663" y="275.0" />
+      <point x="-34.0" y="26.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.BeefPizza" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.Pizza">
+      <point x="0.0" y="-26.5" />
+      <point x="297.0" y="124.0" />
+      <point x="348.5625" y="124.0" />
+      <point x="-44.0" y="49.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.BeefPizza">
+      <point x="2.8421709430404007E-14" y="-26.5" />
+      <point x="181.1875" y="265.0" />
+      <point x="263.0" y="265.0" />
+      <point x="-34.0" y="26.5" />
+    </edge>
+    <edge source="com.xiaotao.dp.creation.factory.pizza.factorymethod.BeijingPizzaHouse" target="com.xiaotao.dp.creation.factory.pizza.factorymethod.PizzaHouse">
+      <point x="-63.99999999999997" y="-26.5" />
+      <point x="117.1875" y="275.0" />
+      <point x="52.25" y="275.0" />
+      <point x="-52.25" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="266.5" y="174.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
