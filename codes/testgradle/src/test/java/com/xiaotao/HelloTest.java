@@ -1,0 +1,14 @@
+package com.xiaotao;
+
+
+import org.junit.Assert;
+import org.junit.Test;
+
+
+
+public class HelloTest {
+    @Test
+    public void testMain() {
+        Assert.assertTrue("test ut failed", false);
+    }
+}
