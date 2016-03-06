@@ -1,6 +1,6 @@
 *.iml
 out
 .idea
-build
-log
-logs
+build/
+log/
+logs/
