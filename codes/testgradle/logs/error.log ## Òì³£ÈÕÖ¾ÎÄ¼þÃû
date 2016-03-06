@@ -1,0 +1,4 @@
+2016-03-06 19:08:06	[ DEBUG ]	[ main:0 ]	This is a debug line: hello
+2016-03-06 19:08:06	[ INFO ]	[ main:1 ]	This is a info line: hello
+2016-03-06 19:08:06	[ WARN ]	[ main:1 ]	This is a warn line: hello
+2016-03-06 19:08:06	[ ERROR ]	[ main:1 ]	This is a error line: hello

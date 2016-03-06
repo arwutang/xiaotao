@@ -1,0 +1,16 @@
+2016-03-06 19:09:10	[ DEBUG ]	[ main:0 ]	This is a debug line: hello
+2016-03-06 19:09:10	[ INFO ]	[ main:0 ]	This is a info line: hello
+2016-03-06 19:09:10	[ WARN ]	[ main:1 ]	This is a warn line: hello
+2016-03-06 19:09:10	[ ERROR ]	[ main:1 ]	This is a error line: hello
+2016-03-06 19:09:31	[ DEBUG ]	[ main:0 ]	This is a debug line: hello
+2016-03-06 19:09:31	[ INFO ]	[ main:1 ]	This is a info line: hello
+2016-03-06 19:09:31	[ WARN ]	[ main:1 ]	This is a warn line: hello
+2016-03-06 19:09:31	[ ERROR ]	[ main:1 ]	This is a error line: hello
+2016-03-06 19:10:34	[ DEBUG ]	[ main:0 ]	This is a debug line: hello
+2016-03-06 19:10:34	[ INFO ]	[ main:1 ]	This is a info line: hello
+2016-03-06 19:10:34	[ WARN ]	[ main:2 ]	This is a warn line: hello
+2016-03-06 19:10:34	[ ERROR ]	[ main:2 ]	This is a error line: hello
+2016-03-06 19:11:57	[ DEBUG ]	[ Test worker:0 ]	This is a debug line: hello
+2016-03-06 19:11:57	[ INFO ]	[ Test worker:5 ]	This is a info line: hello
+2016-03-06 19:11:57	[ WARN ]	[ Test worker:6 ]	This is a warn line: hello
+2016-03-06 19:11:57	[ ERROR ]	[ Test worker:6 ]	This is a error line: hello

@@ -1,0 +1,4 @@
+M2016-03-06 19:11:57	[ DEBUG ]	[ Test worker:0 ]	This is a debug line: hello
+K2016-03-06 19:11:57	[ INFO ]	[ Test worker:5 ]	This is a info line: hello
+K2016-03-06 19:11:57	[ WARN ]	[ Test worker:6 ]	This is a warn line: hello
+M2016-03-06 19:11:57	[ ERROR ]	[ Test worker:6 ]	This is a error line: hello
