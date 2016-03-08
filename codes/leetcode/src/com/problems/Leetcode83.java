@@ -3,7 +3,7 @@ package com.problems;
 import java.util.Arrays;
 
 
-class Solution {
+public class Leetcode83 {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode p1 = head;
 
@@ -23,9 +23,6 @@ class Solution {
 
         return head;
     }
-}
-
-public class Leetcode83 {
 
     public static void main(String args[]) {
         Integer[] values = {1, 1, 2, 2, 2, 3, 3};
@@ -34,7 +31,7 @@ public class Leetcode83 {
 
         ListNode.printListNodes(head);
 
-        Solution sol = new Solution();
+        Leetcode83 sol = new Leetcode83();
         head = sol.deleteDuplicates(head);
 
         ListNode.printListNodes(head);
