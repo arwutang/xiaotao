@@ -3,7 +3,7 @@ package com.problems;
 import java.util.List;
 
 
-class ListNode {
+public class ListNode {
     int val;
     ListNode next;
 
