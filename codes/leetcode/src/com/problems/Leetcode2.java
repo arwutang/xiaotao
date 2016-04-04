@@ -99,7 +99,7 @@ public class Leetcode2 {
         l2.next.next = new ListNode(9);
 
         Leetcode2 sol = new Leetcode2();
-        ListNode.printListNodes(sol.addTwoNumbers1(l1, l2));
-        ListNode.printListNodes(sol.addTwoNumbers2(l1, l2));
+        System.out.println(sol.addTwoNumbers1(l1, l2));
+        System.out.println(sol.addTwoNumbers2(l1, l2));
     }
 }

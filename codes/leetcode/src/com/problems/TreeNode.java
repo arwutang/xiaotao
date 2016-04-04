@@ -12,41 +12,47 @@ public class TreeNode {
         val = x;
     }
 
-    public static void printTree(TreeNode root) {
-        if (root == null) {
-            System.out.print("[]");
-        }
-
+    @Override
+    public String toString() {
         ArrayList<TreeNode> level = new ArrayList<>();
-        level.add(root);
-        System.out.printf("[%s]", root);
+
+        StringBuilder sb = new StringBuilder();
+
+        level.add(this);
+        sb.append(String.format("[%s]", this.val));
+
+        int sbLength = sb.length();
 
         while (!level.isEmpty()) {
             ArrayList<TreeNode> temp = new ArrayList<>();
+            sbLength = sb.length() ;
 
-            System.out.print("[");
+            sb.append(",").append("[");
 
             for(TreeNode node : level) {
-                System.out.print(node.left);
-                System.out.print(",");
-                System.out.print(node.right);
 
                 if (node.left != null) {
+                    sb.append(node.left.val).append(",");
                     temp.add(node.left);
+                } else {
+                    sb.append("NULL").append(",");
                 }
 
                 if (node.right != null) {
+                    sb.append(node.right.val).append(",");
                     temp.add(node.right);
+                } else {
+                    sb.append("NULL").append(",");
                 }
             }
 
-            System.out.print("]");
+            sb.deleteCharAt(sb.length() - 1);
+            sb.append("]");
 
             level = temp;
         }
-    }
 
-    public String toString() {
-        return String.valueOf(this.val);
+        sb.delete(sbLength, sb.length());
+        return sb.toString();
     }
 }

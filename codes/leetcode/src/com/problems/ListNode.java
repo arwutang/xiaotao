@@ -34,18 +34,19 @@ public class ListNode {
         return head;
     }
 
-    public static void printListNodes(ListNode head) {
-        if (head == null) {
-            System.out.println("head == null");
-        }
-
+    @Override
+    public String toString() {
         StringBuilder sb = new StringBuilder();
+
+        ListNode head = this;
 
         while (head != null) {
             sb.append(head.val).append("->");
             head = head.next;
         }
 
-        System.out.println(sb.toString());
+        sb.delete(sb.length() - 2, sb.length());
+
+        return sb.toString();
     }
 }

@@ -19,9 +19,9 @@ public class Leetcode226 {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
-        TreeNode.printTree(root);
+        System.out.println(root);
 
         Leetcode226 sol = new Leetcode226();
-        TreeNode.printTree(sol.invertTree(root));
+        System.out.println(sol.invertTree(root));
     }
 }

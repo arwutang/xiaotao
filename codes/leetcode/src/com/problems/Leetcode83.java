@@ -29,11 +29,11 @@ public class Leetcode83 {
 
         ListNode head = ListNode.createListNodes(Arrays.asList(values));
 
-        ListNode.printListNodes(head);
+        System.out.println(head);
 
         Leetcode83 sol = new Leetcode83();
         head = sol.deleteDuplicates(head);
 
-        ListNode.printListNodes(head);
+        System.out.println(head);
     }
 }
