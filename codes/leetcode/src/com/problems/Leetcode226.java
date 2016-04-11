@@ -1,6 +1,8 @@
 package com.problems;
 
 
+import com.common.TreeNode;
+
 public class Leetcode226 {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {

@@ -1,6 +1,8 @@
 package com.problems;
 
 
+import com.common.ListNode;
+
 public class Leetcode2 {
     /**
      * You are given two linked lists representing two non-negative numbers.

@@ -1,5 +1,7 @@
 package com.problems;
 
+import com.common.ListNode;
+
 import java.util.Arrays;
 
 

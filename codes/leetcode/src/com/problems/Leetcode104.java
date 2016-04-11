@@ -1,6 +1,8 @@
 package com.problems;
 
 
+import com.common.TreeNode;
+
 public class Leetcode104 {
     public int maxDepth(TreeNode root) {
         if (root == null) {
