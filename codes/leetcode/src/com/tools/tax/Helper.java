@@ -27,7 +27,7 @@ public class Helper {
                 spiltLine +
                 String.format(itemFormat, "个人 - 住房公积金", salaryItems.get(SalaryItem.EmployeeHouseFund), newLine) +
                 String.format(itemFormat, "个人 - 补充公积金", salaryItems.get(SalaryItem.EmployeeAdditionalHouseFund), newLine) +
-                spiltLine +
+                newLine +
                 String.format(itemFormat, "个人 - 公积金总额", salaryItems.get(SalaryItem.EmployeeHouseFundAll), newLine) +
                 spiltLine +
                 String.format(itemFormat, "应纳个人所得税", salaryItems.get(SalaryItem.IndividualIncomeTax), newLine) +
