@@ -39,10 +39,10 @@ public class BeijingTaxCalc extends TaxCalc {
         salaryItems.put(SalaryItem.EmployeeMedicalInsurance, Helper.getScaleDouble(baseSocialInsurance * employeeMedicalInsuranceRate + 3, 2));
         salaryItems.put(SalaryItem.EmployeeUnemploymentInsurance, Helper.getScaleDouble(baseSocialInsurance * employeeUnemploymentInsuranceRate, 2));
 
-        double employeeSocialInsurance =  salaryItems.get(SalaryItem.EmployeePension)
-                                        + salaryItems.get(SalaryItem.EmployeeMedicalInsurance)
-                                        + salaryItems.get(SalaryItem.EmployeeUnemploymentInsurance);
-        salaryItems.put(SalaryItem.EmployeeSocialInsurance, Helper.getScaleDouble(employeeSocialInsurance, 2));
+        double employeeSocialInsurance = salaryItems.get(SalaryItem.EmployeePension)
+                                       + salaryItems.get(SalaryItem.EmployeeMedicalInsurance)
+                                       + salaryItems.get(SalaryItem.EmployeeUnemploymentInsurance);
+        salaryItems.put(SalaryItem.EmployeeSocialInsuranceAll, Helper.getScaleDouble(employeeSocialInsurance, 2));
     }
 
     @Override
@@ -50,5 +50,8 @@ public class BeijingTaxCalc extends TaxCalc {
         double employeeHouseFund = Helper.getScaleDouble(salaryItems.get(SalaryItem.BasicSalary) * employeeHouseFundRate, 2);
 
         salaryItems.put(SalaryItem.EmployeeHouseFund, Helper.getScaleDouble(Math.min(maxEmployeeHouseFund, employeeHouseFund), 2));
+
+        double employeeHouseFundAll = salaryItems.get(SalaryItem.EmployeeHouseFund) + salaryItems.get(SalaryItem.EmployeeAdditionalHouseFund);
+        salaryItems.put(SalaryItem.EmployeeHouseFundAll, Helper.getScaleDouble(employeeHouseFundAll, 2));
     }
 }

@@ -10,14 +10,14 @@ public abstract class TaxCalc {
     private static final List<ArrayList<Double>> taxTable = new ArrayList<>();
 
     static {
-            taxTable.add(new ArrayList(Arrays.asList(0D, 0D, 0D)));
-            taxTable.add(new ArrayList(Arrays.asList(1500D, 0.03, 0D)));
-            taxTable.add(new ArrayList(Arrays.asList(4500D, 0.10, 105D)));
-            taxTable.add(new ArrayList(Arrays.asList(9000D, 0.20, 555D)));
-            taxTable.add(new ArrayList(Arrays.asList(35000D, 0.25, 1005D)));
-            taxTable.add(new ArrayList(Arrays.asList(55000D, 0.30, 2755D)));
-            taxTable.add(new ArrayList(Arrays.asList(80000D, 0.35, 5505D)));
-            taxTable.add(new ArrayList(Arrays.asList(Double.MAX_VALUE, 0.45, 13505D)));
+        taxTable.add(new ArrayList(Arrays.asList(0D, 0D, 0D)));
+        taxTable.add(new ArrayList(Arrays.asList(1500D, 0.03, 0D)));
+        taxTable.add(new ArrayList(Arrays.asList(4500D, 0.10, 105D)));
+        taxTable.add(new ArrayList(Arrays.asList(9000D, 0.20, 555D)));
+        taxTable.add(new ArrayList(Arrays.asList(35000D, 0.25, 1005D)));
+        taxTable.add(new ArrayList(Arrays.asList(55000D, 0.30, 2755D)));
+        taxTable.add(new ArrayList(Arrays.asList(80000D, 0.35, 5505D)));
+        taxTable.add(new ArrayList(Arrays.asList(Double.MAX_VALUE, 0.45, 13505D)));
     }
 
     // 员工 - 养老保险比例
@@ -69,7 +69,7 @@ public abstract class TaxCalc {
         double totalBeforeTax = salaryItems.get(SalaryItem.BasicSalary)
                 + salaryItems.get(SalaryItem.Bonus)
                 + salaryItems.get(SalaryItem.UnpaidTaxableIncome)
-                - salaryItems.getOrDefault(SalaryItem.EmployeeSocialInsurance, 0D)
+                - salaryItems.getOrDefault(SalaryItem.EmployeeSocialInsuranceAll, 0D)
                 - salaryItems.getOrDefault(SalaryItem.EmployeeHouseFund, 0D)
                 - salaryItems.getOrDefault(SalaryItem.EmployeeAdditionalHouseFund, 0D)
                 - salaryItems.getOrDefault(SalaryItem.IndividualIncomeTax, 0D)
@@ -97,7 +97,7 @@ public abstract class TaxCalc {
 
         double netPay = salaryItems.get(SalaryItem.BasicSalary)
                 + salaryItems.get(SalaryItem.Bonus)
-                - salaryItems.getOrDefault(SalaryItem.EmployeeSocialInsurance, 0D)
+                - salaryItems.getOrDefault(SalaryItem.EmployeeSocialInsuranceAll, 0D)
                 - salaryItems.getOrDefault(SalaryItem.EmployeeHouseFund, 0D)
                 - salaryItems.getOrDefault(SalaryItem.EmployeeAdditionalHouseFund, 0D)
                 - salaryItems.getOrDefault(SalaryItem.IndividualIncomeTax, 0D);

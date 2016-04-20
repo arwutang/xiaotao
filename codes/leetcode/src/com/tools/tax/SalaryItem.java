@@ -16,11 +16,15 @@ public enum  SalaryItem {
     // 失业保险 - 员工
     EmployeeUnemploymentInsurance,
     // 社会保险 - 员工
-    EmployeeSocialInsurance,
+    EmployeeSocialInsuranceAll,
+
     // 住房公积金 - 员工
     EmployeeHouseFund,
     // 补充住房公积金 - 员工
     EmployeeAdditionalHouseFund,
+    // 公积金 - 员工
+    EmployeeHouseFundAll,
+
     // 纳税金额
     IndividualIncomeTax,
     // 税后收入

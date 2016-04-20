@@ -13,7 +13,7 @@ public class Helper {
         String spiltLine = "=========================================" + newLine;
         String itemFormat = " %-20s %,.2f %s";
 
-        String sb = spiltLine +
+        return spiltLine +
                 String.format(itemFormat, "基本工资收入", salaryItems.get(SalaryItem.BasicSalary), newLine) +
                 String.format(itemFormat, "补贴/奖金收入", salaryItems.get(SalaryItem.Bonus), newLine) +
                 newLine +
@@ -23,16 +23,16 @@ public class Helper {
                 String.format(itemFormat, "个人 - 医疗保险", salaryItems.get(SalaryItem.EmployeeMedicalInsurance), newLine) +
                 String.format(itemFormat, "个人 - 失业保险", salaryItems.get(SalaryItem.EmployeeUnemploymentInsurance), newLine) +
                 newLine +
-                String.format(itemFormat, "个人 - 社会保险", salaryItems.get(SalaryItem.EmployeeSocialInsurance), newLine) +
+                String.format(itemFormat, "个人 - 社会保险", salaryItems.get(SalaryItem.EmployeeSocialInsuranceAll), newLine) +
                 spiltLine +
                 String.format(itemFormat, "个人 - 住房公积金", salaryItems.get(SalaryItem.EmployeeHouseFund), newLine) +
                 String.format(itemFormat, "个人 - 补充公积金", salaryItems.get(SalaryItem.EmployeeAdditionalHouseFund), newLine) +
+                spiltLine +
+                String.format(itemFormat, "个人 - 公积金总额", salaryItems.get(SalaryItem.EmployeeHouseFundAll), newLine) +
                 spiltLine +
                 String.format(itemFormat, "应纳个人所得税", salaryItems.get(SalaryItem.IndividualIncomeTax), newLine) +
                 spiltLine +
                 String.format(itemFormat, "个人税后收入", salaryItems.get(SalaryItem.NetPay), newLine) +
                 spiltLine;
-
-        return sb;
     }
 }
