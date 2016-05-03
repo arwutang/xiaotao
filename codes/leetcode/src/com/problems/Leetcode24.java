@@ -1,20 +1,12 @@
-package com.interview;
-
+package com.problems;
 
 import com.common.ListNode;
 
 import java.util.Arrays;
 
-public class SwapAdjacentNodes {
-    /**
-     * Given head pointer of a linked list, implement a function which swap each pair of adjacent nodes.
-     *
-     * For example: n1->n2->n3->n4  to  n2->n1->n4->n3.
-     *
-     * @param head head of the linked list
-     * @return new head for the linked list
-     */
-    public ListNode swapAdjacentNodes(ListNode head) {
+
+public class Leetcode24 {
+    public ListNode swapPairs(ListNode head) {
         ListNode h = new ListNode(0);
         h.next = head;
         ListNode p = h;
@@ -40,8 +32,8 @@ public class SwapAdjacentNodes {
 
         System.out.println(head);
 
-        SwapAdjacentNodes sol = new SwapAdjacentNodes();
-        ListNode newHead = sol.swapAdjacentNodes(head);
+        Leetcode24 sol = new Leetcode24();
+        ListNode newHead = sol.swapPairs(head);
 
         System.out.println(newHead);
     }
