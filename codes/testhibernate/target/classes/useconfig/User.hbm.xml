@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.useconfig.model.User" table="bs_user" lazy="false">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="username" column="username"/>
+        <property name="password" column="password"/>
+        <property name="registerDatetime" column="register_datetime"/>
+        <property name="lastLoginDatetime" column="last_login_datetime"/>
+
+        <one-to-one name="userAttr" cascade="all"/>
+
+        <set name="orders" cascade="all" inverse="true">
+            <key column="user_id"/>
+            <one-to-many class="com.useconfig.model.Order"/>
+        </set>
+
+    </class>
+</hibernate-mapping>
