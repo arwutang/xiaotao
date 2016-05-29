@@ -15,5 +15,6 @@
 
         <mapping resource="useconfig/User.hbm.xml"/>
         <mapping resource="useconfig/UserAttr.hbm.xml"/>
+        <mapping resource="useconfig/Order.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

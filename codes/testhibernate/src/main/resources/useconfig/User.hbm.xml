@@ -14,5 +14,11 @@
         <property name="lastLoginDatetime" column="last_login_datetime"/>
 
         <one-to-one name="userAttr" cascade="all"/>
+
+        <set name="orders" cascade="all" inverse="true">
+            <key column="user_id"/>
+            <one-to-many class="com.useconfig.model.Order"/>
+        </set>
+
     </class>
 </hibernate-mapping>

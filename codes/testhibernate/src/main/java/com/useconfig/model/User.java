@@ -1,6 +1,7 @@
 package com.useconfig.model;
 
 import java.util.Date;
+import java.util.Set;
 
 
 public class User {
@@ -14,7 +15,11 @@ public class User {
 
     private Date lastLoginDatetime;
 
+    // relationship - userAttr
     private UserAttr userAttr;
+
+    // relationship - order
+    private Set<Order> orders;
 
     public User() {
     }
@@ -73,6 +78,14 @@ public class User {
         this.userAttr = userAttr;
     }
 
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -82,4 +95,5 @@ public class User {
                 ", lastLoginDatetime=" + lastLoginDatetime +
                 '}';
     }
+
 }
