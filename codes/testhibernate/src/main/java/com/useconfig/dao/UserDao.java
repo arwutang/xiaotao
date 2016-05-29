@@ -76,7 +76,7 @@ public class UserDao {
     public User getUser() {
         Session session = sessionFactory.openSession();
 
-        User user = (User) session.get(User.class, 1);
+        User user = (User) session.get(User.class, 48);
 
         session.close();
 

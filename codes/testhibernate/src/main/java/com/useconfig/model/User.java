@@ -14,6 +14,17 @@ public class User {
 
     private Date lastLoginDatetime;
 
+    private UserAttr userAttr;
+
+    public User() {
+    }
+
+    public User(String username, String password, Date registerDatetime) {
+        this.username = username;
+        this.password = password;
+        this.registerDatetime = registerDatetime;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -54,14 +65,12 @@ public class User {
         this.lastLoginDatetime = lastLoginDatetime;
     }
 
-    public User() {
-
+    public UserAttr getUserAttr() {
+        return userAttr;
     }
 
-    public User(String username, String password, Date registerDatetime) {
-        this.username = username;
-        this.password = password;
-        this.registerDatetime = registerDatetime;
+    public void setUserAttr(UserAttr userAttr) {
+        this.userAttr = userAttr;
     }
 
     @Override
@@ -69,7 +78,6 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
                 ", registerDatetime=" + registerDatetime +
                 ", lastLoginDatetime=" + lastLoginDatetime +
                 '}';

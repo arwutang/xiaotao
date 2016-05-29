@@ -12,5 +12,7 @@
         <property name="password" column="password"/>
         <property name="registerDatetime" column="register_datetime"/>
         <property name="lastLoginDatetime" column="last_login_datetime"/>
+
+        <one-to-one name="userAttr" cascade="all"/>
     </class>
 </hibernate-mapping>

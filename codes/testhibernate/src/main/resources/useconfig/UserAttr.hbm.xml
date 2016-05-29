@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.useconfig.model.UserAttr" table="bs_user_attr" lazy="false">
+        <id name="userId" column="user_id">
+            <generator class="foreign">
+                <param name="property">user</param>
+            </generator>
+        </id>
+        <property name="gender" column="gender"/>
+        <property name="age" column="age"/>
+        <property name="description" column="description"/>
+
+        <one-to-one name="user" constrained="true"/>
+    </class>
+</hibernate-mapping>

@@ -14,5 +14,6 @@
         <property name="hibernate.format_sql">false</property>
 
         <mapping resource="useconfig/User.hbm.xml"/>
+        <mapping resource="useconfig/UserAttr.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
