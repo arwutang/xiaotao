@@ -16,7 +16,7 @@ public class TestPathVariable {
 
     @RequestMapping(value="/test_var_2/name/{name}/age/{age}")
     public String testVar1(@PathVariable("name")String name, @PathVariable("age")Integer age) {
-        System.out.println("Nanme = " + name + ", Age = " + age);
+        System.out.println("Name = " + name + ", Age = " + age);
         return "welcome";
     }
 }
