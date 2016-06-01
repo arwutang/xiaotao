@@ -13,7 +13,8 @@
 <body>
     <h1>This is a view test.</h1>
     <div>
-        <p>Username: ${requestScope.username}</p>
+        <p>Username from request: ${requestScope.username}</p>
+        <p>Username from session: ${sessionScope.username}</p>
         <p>DateTime: ${requestScope.time}</p>
     </div>
 </body>

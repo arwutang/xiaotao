@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
+import java.util.Map;
 import java.util.logging.Logger;
 
 
@@ -16,14 +17,19 @@ public class TestModelAndView {
 
     @RequestMapping("/test1")
     public ModelAndView testModelAndView() {
-        LOGGER.warning("request received!");
         String viewName = "viewtest";
 
         ModelAndView modelAndView = new ModelAndView(viewName);
         modelAndView.addObject("time", new Date());
         modelAndView.addObject("username", "xiaotaot");
 
-        LOGGER.warning("request handled!");
         return modelAndView;
+    }
+
+    @RequestMapping("/test_map")
+    public String testMap(Map<String, Object> map) {
+        map.put("username", "xiaotaot1");
+
+        return "viewtest";
     }
 }

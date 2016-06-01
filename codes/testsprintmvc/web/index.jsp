@@ -42,8 +42,15 @@
       <h2>Test Model and View.</h2>
       <a href="model_view/test1"> model_view/test1 </a>
       <br/>
-      <a href="model_view/test2"> model_view/test2 </a>
+      <a href="model_view/test_map"> model_view/test_map </a>
       <br/>
+
+
+      <h2>Test Session Attribute.</h2>
+      <a href="session_attr/test_session"> session_attr/test_session </a>
+      <br/>
+
+
 
     </div>
   </body>
