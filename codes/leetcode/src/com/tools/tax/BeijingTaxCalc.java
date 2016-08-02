@@ -14,7 +14,7 @@ public class BeijingTaxCalc extends TaxCalc {
         // house fund
         this.employeeHouseFundRate = 0.12;
 
-        this.maxEmployeeHouseFund = 4654 / 2;
+        this.maxEmployeeHouseFund = (double) 5102 / 2;
     }
 
     @Override
@@ -24,15 +24,15 @@ public class BeijingTaxCalc extends TaxCalc {
         double baseSocialInsurance;
 
         if (basicSalary < monthlyEmployeeIncomeAvg * 0.4) {
-            baseSocialInsurance = 2585;
+            baseSocialInsurance = 2834;
         } else if (basicSalary < monthlyEmployeeIncomeAvg * 0.6) {
-            baseSocialInsurance = 3878;
+            baseSocialInsurance = 4252;
         } else if (basicSalary < monthlyEmployeeIncomeAvg * 0.7) {
-            baseSocialInsurance = 4524;
+            baseSocialInsurance = 4960;
         } else if (basicSalary < monthlyEmployeeIncomeAvg * 3) {
-            baseSocialInsurance = 6463;
+            baseSocialInsurance = 7086;
         } else {
-            baseSocialInsurance = 19389;
+            baseSocialInsurance = 21258;
         }
 
         salaryItems.put(SalaryItem.EmployeePension, Helper.getScaleDouble(baseSocialInsurance * employeePensionRate, 2));
