@@ -1,14 +1,21 @@
 package com.test;
 
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class testAssert {
     public static void main(String args[]) {
-        assert true;
+        final String testStr = "this is a test";
 
-        System.out.println("assert true passed.");
+        Set<Character> charset = new HashSet<>();
 
-        assert false;
-
-        System.out.println("assert false passed.");
+        for(Character c : testStr.toCharArray()) {
+            if (charset.contains(c)) {
+                System.out.println("find it ! char is: " + c);
+            } else {
+                charset.add(c);
+            }
+        }
     }
 }
