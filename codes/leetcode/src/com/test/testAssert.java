@@ -18,4 +18,8 @@ public class testAssert {
             }
         }
     }
+
+    private int test(boolean isTrue) {
+        return isTrue ?  3 : 0;
+    }
 }

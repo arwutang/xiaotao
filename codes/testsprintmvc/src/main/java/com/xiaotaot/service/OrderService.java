@@ -1,7 +1,11 @@
 package com.xiaotaot.service;
 
-/**
- * Created by xiaotaot on 06/01/2016.
- */
+import org.springframework.stereotype.Service;
+
+
+@Service
 public class OrderService {
+    public OrderService() {
+        System.out.println("OrderService");
+    }
 }
